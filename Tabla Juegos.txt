@@ -1,0 +1,27 @@
+CREATE TABLE JUEGOS (
+ID NUMBER NOT NULL PRIMARY KEY,
+NOMBRE VARCHAR (100) NOT NULL,
+DESARROLLADOR VARCHAR (100) NOT NULL,
+LANZAMIENTO DATE,
+PLATAFORMA VARCHAR (100),
+CONTROLES VARCHAR (100)
+);
+ALTER SESSION SET NLS_DATE_FORMAT = 'DD MM YYYY';
+INSERT INTO JUEGOS VALUES('1','Fahrenheit','Quantic Dream','25-09-2005','PC|PS2|XBOX','Teclado y mouse|Gamepad');
+
+INSERT INTO JUEGOS VALUES('2','Devil May Cry','Capcom','13-08-2001','PS2','Gamepad');
+
+INSERT INTO JUEGOS VALUES('3','Final Fantasy VII','Square','31-01-1997','PC|PSX','Teclado y mouse|Gamepad');
+
+INSERT INTO JUEGOS VALUES('4','Call of Duty: Black Ops','Square Enix','09-11-2010','PC|PS3|XBOX360|WII|NINTENDO DS','Teclado y mouse|Gamepad');
+
+INSERT INTO JUEGOS VALUES('5','King of Figthers 2002','SNK','17-10-2002','ARCADE|PS2|XBOX|DREAMCAST','Gamepad');
+
+INSERT INTO JUEGOS VALUES('6','Metal Gear Solid','Konami','03-09-1998','PC|PSX','Teclado y mouse|Gamepad');
+
+INSERT INTO JUEGOS VALUES('7','Diablo II','Blizzard','29-06-2000','PC|MAC','Teclado y mouse');
+
+INSERT INTO JUEGOS VALUES('8','League of Legends','Riot Games','27-10-2009','PC','Teclado y mouse');
+
+SELECT * FROM JUEGOS;
+DESC JUEGOS;
